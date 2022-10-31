@@ -6,11 +6,7 @@ const Users = ({ users, loading, error }) => {
 	return (
 		<div className="grid md:grid-cols-2 lg:grid-cols-3 mx-auto ">
 			{users.map((user, i) => (
-				<a
-					href="/"
-					className="p-[32px] my-[24px] shadow-md rounded bg-white text-black  w-full h-full"
-					key={i}
-				>
+				<a href="/" className=" text-black  w-full h-full" key={i}>
 					<img
 						src={user.picture.large}
 						alt="`${user.name.title}'s headshot`"
